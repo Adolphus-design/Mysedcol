@@ -1,10 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import {MatButtonModule} from '@angular/material/button';
 
-const routes: Routes = [];
+
+const Materials = [
+  MatButtonModule,
+
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [Materials],
+  exports: [Materials]
 })
 export class AppRoutingModule { }
